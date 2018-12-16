@@ -1,1 +1,9 @@
+com\beginner\service\impl\UserService.class
+com\beginner\entity\po\UserInfo.class
+com\beginner\entity\mapper\UserInfoMapper.class
+com\beginner\controller\BaseController.class
+com\beginner\entity\mapper\UserPasswordMapper.class
 com\beginner\App.class
+com\beginner\controller\MiaoshaController.class
+com\beginner\entity\po\UserPassword.class
+com\beginner\service\IUserService.class
