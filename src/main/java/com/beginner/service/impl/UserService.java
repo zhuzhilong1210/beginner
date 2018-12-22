@@ -6,9 +6,11 @@ import com.beginner.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 @Service
 public class UserService implements IUserService {
-    @Autowired
+    @Resource
     private UserInfoMapper userInfoMapper;
 
     @Override
