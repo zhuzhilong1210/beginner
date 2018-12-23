@@ -1,7 +1,6 @@
 package com.beginner.controller;
 
 import com.beginner.base.BaseController;
-import com.beginner.common.ResponseData;
 import com.beginner.entity.po.UserInfo;
 import com.beginner.exception.BaseException;
 import com.beginner.exception.EnumErrMsg;
@@ -19,7 +18,7 @@ public class UserController extends BaseController {
     private IUserService iUserService;
 
     @GetMapping("/userInfo")
-    public ResponseEntity<?> getUser(Integer id) throws BaseException {
+    public ResponseEntity getUser(Integer id) throws BaseException {
         UserInfo userInfo = iUserService.getUserById(id);
 
         if (userInfo == null) {

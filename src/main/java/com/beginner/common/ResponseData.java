@@ -1,7 +1,5 @@
 package com.beginner.common;
 
-import org.springframework.http.ResponseEntity;
-
 public class ResponseData<T> {
     /**
      * 状态，SUCCESS 或 FAIL
