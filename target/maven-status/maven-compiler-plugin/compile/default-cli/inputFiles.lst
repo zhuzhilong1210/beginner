@@ -1,9 +1,12 @@
-D:\work\project\beginner\src\main\java\com\beginner\controller\MiaoshaController.java
+D:\work\project\beginner\src\main\java\com\beginner\exception\EnumErrMsg.java
+D:\work\project\beginner\src\main\java\com\beginner\base\BaseController.java
+D:\work\project\beginner\src\main\java\com\beginner\exception\BaseException.java
 D:\work\project\beginner\src\main\java\com\beginner\entity\mapper\UserInfoMapper.java
 D:\work\project\beginner\src\main\java\com\beginner\entity\po\UserPassword.java
+D:\work\project\beginner\src\main\java\com\beginner\controller\UserController.java
 D:\work\project\beginner\src\main\java\com\beginner\entity\po\UserInfo.java
 D:\work\project\beginner\src\main\java\com\beginner\service\IUserService.java
 D:\work\project\beginner\src\main\java\com\beginner\service\impl\UserService.java
 D:\work\project\beginner\src\main\java\com\beginner\App.java
-D:\work\project\beginner\src\main\java\com\beginner\controller\BaseController.java
+D:\work\project\beginner\src\main\java\com\beginner\common\ResponseData.java
 D:\work\project\beginner\src\main\java\com\beginner\entity\mapper\UserPasswordMapper.java
