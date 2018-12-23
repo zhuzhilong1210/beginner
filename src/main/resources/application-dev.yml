@@ -1,8 +1,6 @@
 server:
   port: 8090
 spring:
-  profiles:
-    include: other
   http:
     encoding:
       charset: utf-8
