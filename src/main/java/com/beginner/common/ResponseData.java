@@ -1,6 +1,8 @@
 package com.beginner.common;
 
-public class ResponseData {
+import org.springframework.http.ResponseEntity;
+
+public class ResponseData<T> {
     /**
      * 状态，SUCCESS 或 FAIL
       */
@@ -10,23 +12,22 @@ public class ResponseData {
      * 如果status=SUCCESS， 返回前端需要的数据
      * 如果status=FAIL， 返回固定格式的错误数据，错误码errCode及错误描述errMsg
      */
-    public Object data;
+    public T data;
 
     public ResponseData(){}
 
-    public ResponseData(String status, Object data){
+    public ResponseData(String status, T data){
         this.status = status;
         this.data = data;
     }
 
-    public static ResponseData create(Object data){
-        return ResponseData.create("SUCCESS", data);
+    public static <T> ResponseData<T> create(String status, T data){
+        ResponseData<T> responseData = new ResponseData<>(status, data);
+        return responseData;
     }
 
-    public static ResponseData create(String status, Object data){
-        ResponseData responseData = new ResponseData();
-        responseData.setStatus(status);
-        responseData.setData(data);
+    public static <T> ResponseData<T> create(T data){
+        ResponseData<T> responseData = new ResponseData<>("SUCCESS", data);
         return responseData;
     }
 
@@ -38,11 +39,11 @@ public class ResponseData {
         this.status = status;
     }
 
-    public Object getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(T data) {
         this.data = data;
     }
 }

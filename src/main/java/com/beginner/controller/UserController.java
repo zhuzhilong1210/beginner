@@ -7,6 +7,7 @@ import com.beginner.exception.BaseException;
 import com.beginner.exception.EnumErrMsg;
 import com.beginner.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +19,7 @@ public class UserController extends BaseController {
     private IUserService iUserService;
 
     @GetMapping("/userInfo")
-    public ResponseData getUser(Integer id) throws BaseException {
+    public ResponseEntity<?> getUser(Integer id) throws BaseException {
         UserInfo userInfo = iUserService.getUserById(id);
 
         if (userInfo == null) {
