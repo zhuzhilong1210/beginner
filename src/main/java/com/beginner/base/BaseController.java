@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BaseController {
+public abstract class BaseController {
 
     protected ResponseEntity response(Object data) {
         return ResponseEntity.ok(ResponseData.create(data));
