@@ -1,17 +1,11 @@
 package com.beginner.entity.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.beginner.entity.po.UserInfo;
+import org.springframework.stereotype.Component;
 
-public interface UserInfoMapper {
-    int deleteByPrimaryKey(Integer id);
-
-    int insert(UserInfo record);
-
-    int insertSelective(UserInfo record);
-
-    UserInfo selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(UserInfo record);
-
-    int updateByPrimaryKey(UserInfo record);
+//@Component
+public interface UserInfoMapper extends BaseMapper<UserInfo> {
+    //自定义方法
+    int listCount();
 }

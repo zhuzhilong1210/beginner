@@ -14,6 +14,7 @@ public class UserService implements IUserService {
 
     @Override
     public UserInfo getUserById(Integer id) {
-        return userInfoMapper.selectByPrimaryKey(id);
+        return userInfoMapper.selectById(id);
+        //return userInfoMapper.selectByPrimaryKey(id);
     }
 }
